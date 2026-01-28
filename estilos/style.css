@@ -35,6 +35,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  /* z-index: 1; apenas para lembrar que existe essa propriedade que coloca o elemento acima */
 }
 nav#menu ul {
   display: flex;
