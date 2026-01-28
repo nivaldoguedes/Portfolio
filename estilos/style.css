@@ -64,6 +64,7 @@ section#ficha {
   background-color: var(--fundo-card); 
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.353);
 }
 section#ficha img {
   width: 200px;
@@ -92,9 +93,54 @@ div.social {
   margin-bottom: 15px; 
   font-size: 1.8em;
 }
+div.social a {
+  color: var(--destaque);
+  transition: background-color 0.3s, color 0.3s;
+}
+div.social a:hover {
+  color: var(--destaque-inverso);
+}
+section#detalhes {
+  grid-column: 2;
+  background-color: var(--fundo-card); 
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.353);
+}
+article#info {
+  padding: 10px;
+}
+article#info h2 {
+  margin-bottom: 10px;
+}
+article#info p {
+  text-align: justify;
+}
+article#info a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--destaque);
+}
+article#info a:hover {
+  color: var(--destaque-inverso);
+}
 
 footer {
   background-color: var(--destaque);
   color: var(--texto);
   padding: 20px;
+  margin-top: 20px;
+}
+footer p {
+  color: var(--texto-inverso);
+  text-align: center;
+}
+footer p a {
+  text-decoration: none;
+  color: var(--texto-inverso);
+  font-weight: 600;
+}
+footer p a:hover {
+  color: var(--destaque-inverso);
 }
