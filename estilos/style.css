@@ -37,7 +37,7 @@ header {
   align-content: center;
   position: sticky;
   top: 0;
-  /* z-index: 1; apenas para lembrar que existe essa propriedade que coloca o elemento acima */
+  z-index: 1; /* coloca o elemento acima */
 }
 nav#menu ul {
   display: flex;
@@ -209,7 +209,6 @@ article#info a:hover {
   overflow: hidden;
   border-radius: 8px;
 }
-/* ----------------------------------------------------------------- */
 footer {
   background-color: var(--destaque);
   color: var(--texto);
@@ -229,6 +228,18 @@ footer p a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+  section#ficha {
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+    grid-column: 2/3;
+  }
+  section#detalhes {
+    grid-column: 3/4;
+  }
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -243,5 +254,8 @@ footer p a:hover {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
+  }
+  footer {
+    margin-top: 20px;
   }
 }
