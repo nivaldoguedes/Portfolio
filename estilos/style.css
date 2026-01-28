@@ -20,13 +20,20 @@
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
 }
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
+}
 body {
-  /* width: 100vw;
-  height: 100vh; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: color 0.5s, background-color 0.5s;
 }
 header {
   background-color: var(--destaque);
